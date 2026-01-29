@@ -32,7 +32,7 @@ public class Trppingrainwater {
 
 
     public static void main(String[] args) {
-        int arr[]={4,2,0,6,3,2,5};
+        int arr[]={1,8,6,2,5,4,8,3,7};
         System.out.println(water(arr)); 
         
     }
