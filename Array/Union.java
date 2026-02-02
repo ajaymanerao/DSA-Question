@@ -21,9 +21,20 @@ public class Union {
             set.add(z);
         
         }
-        System.out.println("Union:");
+        System.out.print("Union:- ");
         for (int val : set) {
             System.out.print(val + " ");
+        }
+        System.out.println();
+
+        System.out.print("Intersection:- ");
+
+        for(int i=0;i<arr1.length;i++){
+            for(int j=0;j<arr2.length;j++){
+                if(arr1[i]==arr2[j]){
+                    System.out.print( +arr1[i]+" ");
+                }
+            }
         }
     }
 
