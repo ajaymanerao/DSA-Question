@@ -11,15 +11,7 @@ public class String1 {
         System.out.println(s1.equals(s3)); //Context
         // System.out.println(s1.compareTo(s3)); //Context
 
-
-
-
-
-
-
-
-
-
+          
         // String str="Kareena";  //SLP
         // String str1=new String("Karrena"); //Heap
         
