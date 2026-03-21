@@ -12,6 +12,11 @@ public class String1 {
         System.out.println(s3.compareTo(s4));
 
 
+        String s5="Zjay";
+        String s6="Neha";
+        System.out.println(s5.compareTo(s6));
+
+
 
 
     }
