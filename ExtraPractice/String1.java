@@ -5,6 +5,15 @@ public class String1 {
         String s1="Ajay";
         String s2="Anerao";
         System.out.println(s1.compareTo(s2));
+
+
+        String s3="Ajay";
+        String s4="Ajay";
+        System.out.println(s3.compareTo(s4));
+
+
+
+
     }
     
 }
