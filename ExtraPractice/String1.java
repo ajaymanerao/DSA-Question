@@ -1,7 +1,7 @@
 package ExtraPractice;
 
 public class String1 {
-    public static void main(String[] args) {
+     void main() {
         // String s1="Ajay";
         // String s2="Anerao";
         // System.out.println(s1.compareTo(s2));
@@ -31,17 +31,18 @@ public class String1 {
         // System.out.println(b);
 
 
-        String str2=new String("Ajay");
-        StringBuffer sb=new StringBuffer("Ajay");
-        System.out.println(str2.equals(sb));
+        // String str2=new String("Ajay");
+        // StringBuffer sb=new StringBuffer("Ajay");
+        // System.out.println(str2.equals(sb));
         
+        // String s1="Ajay";
+        // String s2="Ajay";
+        // System.out.println(s1==s2);
 
+            // StringBuilder sb = new StringBuilder();
+            // sb.append(null);
 
-
-        
-
-
-
+            // System.out.println(sb);
 
     }
     
