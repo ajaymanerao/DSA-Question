@@ -26,6 +26,7 @@ public class Add {
         var c=44.44;
         var e=55.55;
         System.out.println(c+e);
+        System.out.println('a'+'b');
 
 
     }
