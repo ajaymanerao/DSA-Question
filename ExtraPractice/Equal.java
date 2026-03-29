@@ -23,10 +23,15 @@ public class Equal {
 
        Integer c=11;
        Integer d=11;
+       Integer e=200;
+       Integer f=200;
        System.out.println(c==d);
        System.out.println(c.equals(d));
+        System.out.println("-----------------------------------------");
+       System.out.println(e==f);
+       System.out.println(e.equals(f));
 
-       System.out.println("--------------------------------------------------");
+       System.out.println("------------------------------------------");
 
 
        String s1="Ajay";
