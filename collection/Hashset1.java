@@ -24,6 +24,11 @@ public class Hashset1 {
             set.add(x);
         }
         System.out.println(set);
+        String str="Ajay";
+        for(int i=0;i<str.length();i++){
+           System.out.println(str.charAt(i));
+        }
+         
     }
     
 }
