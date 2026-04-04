@@ -146,7 +146,7 @@ Function<Integer, Double> avgOfDigits = i -> {
 System.out.println(avgOfDigits.apply(1234));
 
 
-
+//Predicate 
 Predicate<Integer> isPrime = n -> {
             if (n <= 1) return false;
             for (int i = 2; i <= Math.sqrt(n); i++) {
@@ -156,7 +156,66 @@ Predicate<Integer> isPrime = n -> {
         };
     System.out.println(isPrime.test(7));
 
+//Number even
+Predicate<Integer> isEven = n -> {
+    if(n%2==0){
+        return true;
+    }
+        return false;
+};
     
+System.out.println("This number is Even"+isEven.test(4));
+
+
+//Number odd
+Predicate<Integer> isOdd = n -> {
+    if(n%2!=0){
+        return true;
+    }
+        return false;
+};
+    
+System.out.println("This number is odd"+isEven.test(4));
+
+//leapyear
+ Predicate<Integer> isLeapYear = year -> 
+        (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+
+        int year = 2024;
+
+        if (isLeapYear.test(year)) {
+            System.out.println(year + " is a Leap Year");
+        } else {
+            System.out.println(year + " is NOT a Leap Year");
+        }
+
+//check vowel
+  Predicate<Character> isVowel = ch ->
+                "AEIOUaeiou".indexOf(ch) != -1;
+
+        char ch = 'A';
+
+        if (isVowel.test(ch)) {
+            System.out.println(ch + " is a Vowel");
+        } else {
+            System.out.println(ch + " is NOT a Vowel");
+        }
+
+//alphabet
+    Predicate<Character> isAlphabet = cha ->
+                (cha >= 'A' && cha <= 'Z') || (cha >= 'a' && cha <= 'z');
+
+        char cha = 'g';
+
+        if (isAlphabet.test(cha)) {
+            System.out.println(cha + " is an Alphabet");
+        } else {
+            System.out.println(cha + " is NOT an Alphabet");
+        }
+
+
+
+
 
 
 
