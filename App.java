@@ -1,3 +1,12 @@
+import java.util.HashSet;
+import java.util.Set;
+class Student{
+    int id;
+    Student(int id){
+        this.id=id;
+    }
+}
+
 public class App {
 
 public void main(String[] args) {
@@ -22,25 +31,32 @@ public void main(String[] args) {
 
         //print("10"+"20"*3); 10202020
 
-        String str="aaabbc";
-        for(int i=0;i<str.length();i++){
-            boolean value=false;
-            for(int k=0;k<i;k++){
-                if(str.charAt(i)==str.charAt(k)){
-                    value=true;
-                    break;
-                }
-            }
-            if(value)continue;
-            int count=1;
-            for(int j=i+1;j<str.length();j++){
-                if(str.charAt(i)==str.charAt(j)){
-                    count++;
-                }
-            }
-            System.out.print(str.charAt(i)+""+count);
+        // String str="aaabbc";
+        // for(int i=0;i<str.length();i++){
+        //     boolean value=false;
+        //     for(int k=0;k<i;k++){
+        //         if(str.charAt(i)==str.charAt(k)){
+        //             value=true;
+        //             break;
+        //         }
+        //     }
+        //     if(value)continue;
+        //     int count=1;
+        //     for(int j=i+1;j<str.length();j++){
+        //         if(str.charAt(i)==str.charAt(j)){
+        //             count++;
+        //         }
+        //     }
+        //     System.out.print(str.charAt(i)+""+count);
         
-        }
+        // }
+
+         Set<Student> set = new HashSet<>();
+
+set.add(new Student(1));
+set.add(new Student(1));
+
+System.out.println(set.size());
 
 
 
