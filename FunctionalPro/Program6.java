@@ -15,6 +15,10 @@ public class Program6 {
 		// empty()
 		Stream<String> stream3 = Stream.empty();
 
+
+
+
+        
 		System.out.println(stream3.count());
 
 		// builder()
