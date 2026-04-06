@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Scanner;
 import java.util.Set;
 class Student{
     int id;
@@ -51,12 +52,21 @@ public void main(String[] args) {
         
         // }
 
-         Set<Student> set = new HashSet<>();
+//          Set<Student> set = new HashSet<>();
 
-set.add(new Student(1));
-set.add(new Student(1));
+// set.add(new Student(1));
+// set.add(new Student(1));
 
-System.out.println(set.size());
+// System.out.println(set.size());
+       Scanner sc=new Scanner(System.in);
+       int a=sc.nextInt();
+       double d=sc.nextDouble();
+       String str=sc.nextLine();
+       
+       System.out.println(a);
+       System.out.println(str);
+       System.out.println(d);
+
 
 
 

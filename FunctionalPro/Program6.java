@@ -22,7 +22,6 @@ public class Program6 {
 		System.out.println(stream3.count());
 
 		// builder()
-		// Stream<String> stream4=(Stream<String>) Stream.<String>builder();
 		Stream<String> stream4 = Stream.<String>builder().add("A").add("B").add("C").build();
 
 		// concat
@@ -32,22 +31,10 @@ public class Program6 {
 		Stream<String> s3 = Stream.concat(s1, s2);
 
 		// generate()
-
-		// static <T> Stream<T> generate(Supplier<T> s)
-
-		// Supplier<Integer> numbers= () -> return 11;
-
-		// Supplier<Double> numbers = () -> new Double(Math.random());
-		// Supplier<Double> numbers1 = () -> Math.random();
-
 		Stream<Double> streamDouble = Stream.generate(Math::random).limit(5);
 
 		streamDouble.forEach(System.out::println);
 
-		// UnaryOperator<Integer> increment = (n) -> n+2;
-		// n->n+2
-		// iterate()
-		// static <T> Stream<T> iterate(T seed, UnaryOperator<T> f)
 		Stream<Integer> streamInt = Stream.iterate(10, n -> n + 2).limit(5);
 
 		streamInt.forEach(System.out::println);
