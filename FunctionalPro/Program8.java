@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 
 public class Program8 {
     public static void main(String[] args) {
-        List<String> friends=Arrays.asList("Ram","Nitin","Neha","Amit");
+        List<String> friends=Arrays.asList("Resh","Ram","Nitin","Neha","Amit");
         List<String>result= new ArrayList<>();
 
         for(String name: friends){
@@ -31,13 +31,13 @@ public class Program8 {
         System.out.println(countWithN);
 
 
-        Predicate<String>checkWithR= s -> s.startsWith("R");
+        Predicate<String>checkWithR= s -> s.startsWith("Re");
 
         friends.stream()
                 .filter(checkWithR)
                 .forEach(System.out::println);
 
-        long countWithR=friends.stream().filter(name -> name.startsWith("A")).count();
+        long countWithR=friends.stream().filter(name -> name.startsWith("Re")).count();
         System.out.println(countWithR);
 
 
