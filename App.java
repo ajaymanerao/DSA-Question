@@ -67,11 +67,22 @@ public void main(String[] args) {
     //    System.out.println(str);
     //    System.out.println(d);
 
+    
 
-    Integer a=20;
-    Integer b=a;
-    a=30;
-    System.out.println(a+" "+b);
+    //Immutable Integer
+    // Integer a=20;
+    // Integer b=a;
+    // a=30;
+    // System.out.println(a+" "+b);
+
+
+
+    //mutable StringBuffer
+    StringBuffer sb1=new StringBuffer("A");
+    StringBuffer sb2= sb1;
+    sb1.append("B");
+    System.out.println(sb1);
+    System.out.println(sb2);
 
 
 
