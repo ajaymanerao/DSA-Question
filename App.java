@@ -58,14 +58,20 @@ public void main(String[] args) {
 // set.add(new Student(1));
 
 // System.out.println(set.size());
-       Scanner sc=new Scanner(System.in);
-       int a=sc.nextInt();
-       double d=sc.nextDouble();
-       String str=sc.nextLine();
+    //    Scanner sc=new Scanner(System.in);
+    //    int a=sc.nextInt();
+    //    double d=sc.nextDouble();
+    //    String str=sc.nextLine();
        
-       System.out.println(a);
-       System.out.println(str);
-       System.out.println(d);
+    //    System.out.println(a);
+    //    System.out.println(str);
+    //    System.out.println(d);
+
+
+    Integer a=20;
+    Integer b=a;
+    a=30;
+    System.out.println(a+" "+b);
 
 
 
