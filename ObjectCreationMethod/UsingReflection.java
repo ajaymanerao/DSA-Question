@@ -22,9 +22,9 @@ public class UsingReflection {
     public static void main(String[] args) {
         try {
             //Load the class
-             Class<?> clazz=Class.forName("ObjectCreationMethod.Student");
+             Class clazz=Class.forName("ObjectCreationMethod.Student");
              //getconstructor
-             Constructor<?> constructor=clazz.getDeclaredConstructor(int.class,String.class);
+             Constructor constructor=clazz.getDeclaredConstructor(int.class,String.class);
             //create object
              Student s=(Student)constructor.newInstance(11, "Ajay");
              s.display();
