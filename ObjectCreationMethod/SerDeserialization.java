@@ -18,10 +18,9 @@ class Student implements Serializable{
     }
 }
 
-public class Deserialization {
+public class SerDeserialization {
     public static void main(String[] args) {
         try {
-
             //Serialization
             Student s=new Student(11, "Ajay");
             FileOutputStream fos=new FileOutputStream("Student.ser");
@@ -31,7 +30,6 @@ public class Deserialization {
             fos.close();
             System.out.println("Object Serialization Successfully");
             
-
             // Deserialization
             FileInputStream fis= new FileInputStream("Student.ser");
             ObjectInputStream ois= new ObjectInputStream(fis);
@@ -42,7 +40,6 @@ public class Deserialization {
 
             System.out.println("ID :"+std.id);
             System.out.println("Name :"+std.name); 
-
 
             
         } catch (Exception e) {
