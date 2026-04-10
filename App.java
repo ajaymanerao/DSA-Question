@@ -10,7 +10,7 @@ class Student{
 
 public class App {
 
-public void main(String[] args) {
+public static void  main(String[] args) {
     // int a=10;
     // int b=20;
     // System.out.println(a+b);
@@ -78,11 +78,26 @@ public void main(String[] args) {
 
 
     //mutable StringBuffer
-    StringBuffer sb1=new StringBuffer("A");
-    StringBuffer sb2= sb1;
-    sb1.append("B");
-    System.out.println(sb1);
-    System.out.println(sb2);
+    // StringBuffer sb1=new StringBuffer("A");
+    // StringBuffer sb2= sb1;
+    // sb1.append("B");
+    // System.out.println(sb1);
+    // System.out.println(sb2);
+
+
+    // Integer a=200;
+    // a=300;
+    // System.out.println(a);
+
+
+    // String s1="AjayAnerao";
+    // final String s2="Ajay";
+    // String s3=s2+"Anerao";
+    // System.out.println(s1==s3);
+
+
+
+
 
 
 
