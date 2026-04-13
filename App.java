@@ -96,13 +96,13 @@ public static void  main(String[] args) {
     // System.out.println(s1==s3);
 
 
-    String password="123";
-    if(password=="123"){
-        System.out.println("Valid");
-    }else{
-        System.out.println("invalid");
-    }
-
+    // String password="123";
+    // if(password=="123"){
+    //     System.out.println("Valid");
+    // }else{
+    //     System.out.println("invalid");
+    // }
+ 
 
 
 
