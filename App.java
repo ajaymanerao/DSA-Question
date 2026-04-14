@@ -102,11 +102,32 @@ public static void  main(String[] args) {
     // }else{
     //     System.out.println("invalid");
     // }
+
+
+    double a=0.3+0.2;
+    double b=0.5f;
+    double c=b;
+    System.out.println(a==b);
+    System.out.println(c);
+
+    String name="ajay";
+    int count=1;
+    char [] arr=  new char[name.length()-2];
+    for(int i=name.length()-1;i>=0;i--){
+        if(name.charAt(i)=='a' && count==1){
+            count++;
+            continue;
+          
+
+        }
+       
+        arr[i-1]=  name.charAt(i);        
+    }
+    System.out.println(arr.length);
+    for(int j=0;j<arr.length;j++){
+        System.out.println(arr[j]);
+    }
  
-
-
-
-
 
 
 
