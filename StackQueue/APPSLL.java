@@ -15,13 +15,11 @@ public class APPSLL {
 		list.addFirst(40);
 		
 		list.display();
-
-        // Node head=list.getHead();
-		// head=newNode;
-		// list.addLast(50);
-		// list.addLast(60);
-		// list.addLast(70);
-		// list.display();
+		head=newNode;
+		list.addLast(50);
+		list.addLast(60);
+		list.addLast(70);
+		list.display();
 		
 	}
 
