@@ -1,22 +1,26 @@
 package Soting;
+import java.util.*;
 
-import java.util.Scanner;
-
-public class BubbleSort {
+public class SortedArrayBubbleSort {
     public static void bubbleSort(int arr[]){
-        int n=arr.length; 
+        int n=arr.length;
+        boolean sorted;
         for(int i=0;i<n-1;i++){
+            sorted= false;
             for(int j=0;j<n-i-1;j++){
                 if(arr[j]>arr[j+1]){
                     int temp=arr[j];
                     arr[j]=arr[j+1];
                     arr[j+1]=temp;
+                    sorted=true;
                 }
             }
+            if(sorted==false){
+            break;
+        }
         }
          
     }
-
 
 
     public static void main(String[] args) {
@@ -36,3 +40,4 @@ public class BubbleSort {
     }
     
 }
+
