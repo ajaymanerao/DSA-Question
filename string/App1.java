@@ -10,8 +10,13 @@ public static int  tryFinal(){
     }
  
 }
+
+public static void syso(){
+    System.out.println(010);
+}
     public static void main(String[] args) {
-        System.out.println(tryFinal());
+       // System.out.println(tryFinal());
+       syso();
         
     }
     
