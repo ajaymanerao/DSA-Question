@@ -14,11 +14,7 @@ public static void secMax(int arr[]){
     }
     System.out.println(max);
     System.out.println(secmax);
-
-
 }
-    
-
     public static void main(String[] args) {
         int arr[]= {15, 72, 48, 96, 33, 81};
         secMax(arr);
