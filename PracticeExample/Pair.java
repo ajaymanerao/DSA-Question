@@ -51,6 +51,19 @@ public class Pair {
         }
     }
 
+    public static int shiftFirstlast(int arr4[]){
+    int rev = 0;
+    for(int i=0;i<arr4.length;i++){
+        while (arr4[i] > 0) {
+            int digit = arr4[i]  % 10;
+            rev = rev * 10 + digit;
+            arr4[i]  = arr4[i]  / 10;
+        }  
+    }
+    return rev;
+    
+    }
+
     public static void main(String[] args) {
         int arr[]={4,8,12,16};
         //findPair(arr);
@@ -59,7 +72,9 @@ public class Pair {
         int arr2[]={123,235,6754,3257,64,2367,288,35,645,374};
         //findFirst(arr2);
         int arr3[]={123,235,6754,3257,64,2367,288,35,645,374};
-        findFirstlast(arr3);
+        //findFirstlast(arr3);
+        int[] arr4= {123, 235, 6754, 3257, 64, 2367, 288, 35, 645, 374};
+        System.out.println( shiftFirstlast(arr4));
     }
     
 }
