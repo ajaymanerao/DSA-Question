@@ -8,7 +8,6 @@ public class CharCount {
                 if(str.charAt(i)==str.charAt(k)){
                     visited=true;
                 }
-
             }
             if(visited)continue;
             int count=1;
@@ -18,13 +17,11 @@ public class CharCount {
                 }
             }
             System.out.println(str.charAt(i)+" "+count);
-         
         }
     }
 
     public static void main(String[] args) {
         String str="ajaymadhavraoanerao";
         charCount(str);
-    }
-    
+    }  
 }
